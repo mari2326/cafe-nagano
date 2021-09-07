@@ -1,14 +1,11 @@
-<div class="contents row">
   <div class="container">
-    <h3>投稿する</h3>
-    <%= form_with(model: @post, local: true) do |f| %>
+    <h3>cafeの情報を入力する</h3>
+    <%= form_with model: @post, local: true do |f| %>
 
     <%= render 'shared/error_messages', model: f.object %>
-    
-      <%= f.file_field :image %>
-      <%= f.text_field :name, placeholder: "Cafe name" %>
-      <%= f.text_area :text, placeholder: "text", rows: "10" %>
-      <%= f.submit "SEND" %>
+      <p><%= f.file_field :image %></p>
+      <p><%= f.text_field :name, placeholder: "Cafe name" %></P>
+      <p><%= f.text_area :text, placeholder: "text", rows: "10" %></P>
+      <p><%= f.submit "SEND" %></p>
     <% end %>
   </div>
-</div>

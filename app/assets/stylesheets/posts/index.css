@@ -1,0 +1,38 @@
+.post-contents{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10vh 0;
+}
+
+.post-lists{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+
+}
+
+.post-lists>.list{
+  width: 37vh;
+  padding: 5vw;
+}
+
+.post-img-content{
+  position: relative;
+}
+
+.post-img{
+  width: 40vh;
+  height: 40vh;
+}
+
+.post-name{
+  font-size: 2.5vh;
+}
+
+.post-in{
+  text-decoration: none;
+  color: #333333;
+}
