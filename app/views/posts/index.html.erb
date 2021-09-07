@@ -1,6 +1,24 @@
 <%= render "shared/header" %>
 
-
-<%= link_to new_post_path do %>
-  <span>投稿する</span>
+<div class='post-contents'>
+  <h3 class='title'>cafe's リスト</h3>
+  <%= link_to new_post_path do %>
+  <div class='post-in'>投稿する</div>
 <% end %>
+  <ul class='post-lists'>
+    <% @posts.each do |post| %>
+    <li class='list'>
+      <%#= link_to post_path(post.id) do %>
+      <div class='post-img-content'>
+      <%= image_tag post.image, class: "post-img" %>
+        <h3 class='post-name'>
+        <%= post.name %>
+        </h3>
+        <%= post.text %>
+
+      </div>
+      <%# end %>
+    <% end %>
+  </ul>
+</div>
+
