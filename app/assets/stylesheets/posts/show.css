@@ -1,0 +1,16 @@
+.post-show{
+  text-align: center;
+  padding: 3vh 0;
+}
+
+.post-img-two{
+  width: 45vh;
+  height: 45vh;
+}
+
+.post-edit{
+  color: #333333;
+}
+.post-destroy{
+  color: #333333;
+}
