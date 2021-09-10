@@ -1,0 +1,9 @@
+<div class="post-contents">
+  <p><%= @nickname %>さんの投稿一覧</p>
+  <% @posts.each do |post| %>  
+      <p><%= image_tag post.image, class: "post-img"%></p>
+      <p><%= post.name%></P>
+      <p><%= post.text %></P>
+  <% end %>
+</div>
+
