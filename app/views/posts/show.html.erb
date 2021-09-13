@@ -13,7 +13,7 @@
 <div class="container">
     <% if user_signed_in? %>
       <%= form_with(model: [@post, @comment], local: true) do |f| %>
-        <%= f.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= f.text_area :text, placeholder: "コメントする", rows: "3", cols: "40" %>
         <p><%= f.submit "SEND" %></p>
       <% end %>
     <% else %>

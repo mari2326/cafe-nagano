@@ -4,8 +4,8 @@
 
     <%= render 'shared/error_messages', model: f.object %>
       <p><%= f.file_field :image %></p>
-      <p><%= f.text_field :name, placeholder: "Cafe name" %></P>
-      <p><%= f.text_area :text, placeholder: "text", rows: "10" %></P>
+      <p><%= f.text_area :name, placeholder: "Cafe name", rows: "2", cols: "30" %></P>
+      <p><%= f.text_area :text, placeholder: "text", rows: "5" , cols: "30" %></P>
       <p><%= f.submit "SEND" %></p>
     <% end %>
   </div>
