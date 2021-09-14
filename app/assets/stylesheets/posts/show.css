@@ -8,9 +8,6 @@
   height: 45vh;
 }
 
-.post-edit{
-  color: #333333;
-}
-.post-destroy{
+.post-edit,.post-destroy,.comment-user-nickname{
   color: #333333;
 }

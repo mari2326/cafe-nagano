@@ -1,9 +1,11 @@
 <div class="post-contents">
+  <h3>
   <p><%= @nickname %>さんの投稿一覧</p>
+  </h3>
   <% @posts.each do |post| %>  
-      <p><%= image_tag post.image, class: "post-img"%></p>
-      <p><%= post.name%></P>
-      <p><%= post.text %></P>
+      <p><%= image_tag post.image, class: "post-img" %></p>
+      <h3><%= post.name %></h3>
+      <%= post.text %>
   <% end %>
 </div>
 

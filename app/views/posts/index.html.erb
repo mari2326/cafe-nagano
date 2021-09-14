@@ -12,10 +12,9 @@
       <div class='post-img-content'>
       <%= image_tag post.image, class: "post-img" %>
       <% end %>
-        <h3 class='post-name'>
-        <%= post.name %>
-        </h3>
+        <h3 class='post-name'><%= post.name %></h3>
         <%= post.text %>
+        <p><%= link_to post.user.nickname, user_path(post.user_id), class:"post-user-nickname" %></p>
       </div>
     <% end %>
   </ul>
